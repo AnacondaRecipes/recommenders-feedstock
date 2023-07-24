@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  url: https://github.com/microsoft/recommenders/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: 8db3785543b2ace6ddc68994e71c8920efa781432708d8d4cc7aff720f11b55f
 
 build:
@@ -20,7 +20,7 @@ requirements:
     - python
     - setuptools
     - wheel
-    - numpy {{ numpy }}
+    - numpy >=1.19
   run:
     - bottleneck >=1.2.1,<2
     - category_encoders >=1.3.0
@@ -32,7 +32,6 @@ requirements:
     - memory_profiler >=0.54.0,<1
     - nltk >=3.4,<4
     - numba >=0.38.1,<1
-    - numpy >=1.19
     - pandas >1.0.3,<2
     - pandera-core >=0.6.5
     - python
@@ -45,6 +44,7 @@ requirements:
     - seaborn >=0.8.1,<1
     - tqdm >=4.31.1,<5
     - transformers >=2.5.0,<5
+    - {{ pin_compatible('numpy') }}
 
 test:
   requires:
