@@ -93,7 +93,7 @@ about:
     This package contains functions to simplify common tasks used when
     developing and evaluating recommender systems.
   summary: Microsoft Recommenders - Python utilities for building recommender systems
-  doc_url: https://pypi.org/project/recommenders/
+  doc_url: https://microsoft-recommenders.readthedocs.io/
   dev_url: https://github.com/microsoft/recommenders
 
 extra:
