@@ -1,8 +1,6 @@
-# upload_channels:
-#   - sfe1ed40
-# channels:
-#   - sfe1ed40
-
-channels:
-  - ari-test
+upload_channels:
   - sfe1ed40
+channels:
+  - sfe1ed40
+  
+upload_without_merge: True
